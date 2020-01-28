@@ -1,0 +1,253 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<link rel="stylesheet" href="https://ree-prored.fullstep.net/script/login/PRORED/css/estilos.css">
+        <link rel="stylesheet" href="https://ree-prored.fullstep.net/script/login/PRORED/css/stylesheet.css">
+        <link rel="stylesheet" href="https://ree-prored.fullstep.net/script/login/PRORED/css/stylesheet-2.css">
+<script src="https://ree-prored.fullstep.net/script/login/PRORED/js/jquery-1.9.0.js"></script>
+<script src="https://ree-prored.fullstep.net/script/login/PRORED/js/jquery-1.9.0.min.js"></script>
+<!-- <script src="SpryAssets/SpryValidationCheckbox.js" type="text/javascript"></script>
+<link href="SpryAssets/SpryValidationCheckbox.css" rel="stylesheet" type="text/css" /> -->
+<script src="https://ree-prored.fullstep.net/script/common/formatos.js"></script>
+<script language="JavaScript" src="https://ree-prored.fullstep.net/script/common/ajax.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+<style type="text/css">
+.form-style-10{
+    width:450px;
+    padding:30px;
+    margin:40px auto;
+    background: #FFF;
+    border-radius: 10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13);
+}
+.form-style-10 .inner-wrap{
+    padding: 30px;
+    background: #F8F8F8;
+    border-radius: 6px;
+    margin-bottom: 15px;
+}
+.form-style-10 h1{
+    background: #2A88AD;
+    padding: 20px 30px 15px 30px;
+    margin: -30px -30px 30px -30px;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+}
+.form-style-10 h1 > span{
+    display: block;
+    margin-top: 2px;
+    font: 13px Arial, Helvetica, sans-serif;
+}
+.form-style-10 label{
+    display: block;
+    font: 13px Arial, Helvetica, sans-serif;
+    color: #888;
+    margin-bottom: 15px;
+}
+.form-style-10 input[type="text"],
+.form-style-10 input[type="date"],
+.form-style-10 input[type="datetime"],
+.form-style-10 input[type="email"],
+.form-style-10 input[type="number"],
+.form-style-10 input[type="search"],
+.form-style-10 input[type="time"],
+.form-style-10 input[type="url"],
+.form-style-10 input[type="password"],
+.form-style-10 textarea,
+.form-style-10 select {
+    display: block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+}
+
+.form-style-10 .section{
+    font: normal 20px 'Bitter', serif;
+    color: #016499;
+    margin-bottom: 5px;
+}
+.form-style-10 .section span {
+    background: #2A88AD;
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 4px solid #fff;
+    font-size: 14px;
+    margin-left: -45px;
+    color: #fff;
+    margin-top: -3px;
+}
+.form-style-10 input[type="button"], 
+.form-style-10 input[type="submit"]{
+    background: #2A88AD;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+    font: normal 30px 'Bitter', serif;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.17);
+    border: 1px solid #257C9E;
+    font-size: 15px;
+}
+.form-style-10 input[type="button"]:hover, 
+.form-style-10 input[type="submit"]:hover{
+    background: #2A6881;
+    -moz-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    -webkit-box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+    box-shadow: inset 0px 2px 2px 0px rgba(255, 255, 255, 0.28);
+}
+.form-style-10 .privacy-policy{
+    float: right;
+    width: 250px;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #016499;
+    margin-top: 10px;
+    text-align: right;
+}
+</style>
+</head>
+
+
+
+
+
+
+
+<body style="zoom: 1;">
+    
+     <div class="pag-solicitar-registro">
+            <div class="compound" style="background-image: url(https://ree-prored.fullstep.net/script/login/PRORED/css/img/bg2.jpg)">
+                <!-- 
+                <header class="cf">
+                    <div class="(6/12) col"><div class="logo" style="background-image: url('https://ree-prored.fullstep.net/script/login/PRORED/css/img/logo.png');"></div></div>
+                    <div class="(6/12) col"><h2 class="text text--right">ESPACIO DE PROVEEDORES</h2></div>
+                </header>  
+                --> 
+
+                <main>  
+                <div class="form-style-10">
+                    <p class="section" id="second">
+                        Su solicitud ha sido enviada correctamente. Se le informarán por email los próximos pasos a seguir. 
+                    </p>
+
+<form id="ajax-contact" method="post">
+    <div class="section"><span>1</span>Contacto</div>
+    <div class="inner-wrap">
+        <label>Nombre<input type="text" id="field1" name="field1" autocomplete="true" required="true" /></label>
+        <label>Apellidos <input type="text" id="field7" name="field7" autocomplete="true" required="true" /></label>
+        <label>NIF <input type="text" id="field2" name="field2" autocomplete="true" required="true" /></label>
+       <!-- 
+        <label>Dirección <textarea name="field2" id="field2" autocomplete="true"></textarea></label>
+        --> 
+        <label>Email<input type="email" name="field3"id="field3" autocomplete="true" required="true" /></label>
+        <label>Teléfono <input type="text" name="field4" id="field4" autocomplete="true" /></label>
+    </div>
+
+    <div class="section"><span>2</span>Empresa</div>
+    <div class="inner-wrap">
+        <label>Razón social<input type="text" name="field5" id="field5" autocomplete="true" /></label>
+        <label>CIF<input type="text" name="field6" id="field6" autocomplete="true" required="true" /></label>
+    </div>
+
+    <div class="button-section">
+     <input type="submit" name="submit" id="submit" />
+     <span class="privacy-policy">
+     <input type="checkbox" name="field7">Está de acuerdo con los servicios indicados. 
+     </span>
+    </div>
+</form>
+</div>                                               
+                                    
+
+                   
+
+<script type="text/javascript">
+              // Get the form.
+    $("#second").hide();
+    var form = $('#ajax-contact');
+
+    // Set up an event listener for the contact form.
+    $(form).submit(function(event) {
+    // Stop the browser from submitting the form.
+    event.preventDefault();
+    var field1 = $("#field1"). val();
+       var field2 = $("#field2"). val();
+       var field3 = $("#field3"). val();
+       var field4 = $("#field4"). val();
+       var field5 = $("#field5"). val();
+       var field6 = $("#field6"). val();
+       var field7 = $("#field7"). val();
+    // TODO
+    // Submit the form using AJAX.
+   $.ajax({
+        url: 'https://poc-ree-r18.appiancloud.com/suite/webapi/init',
+        type: 'POST',
+        beforeSend: function (xhr) {
+       // xhr.setRequestHeader ("Authorization", "Basic " + btoa("alejandro.rueda@appian.com" + ":" + "Alex123")); 
+        xhr.setRequestHeader ("Appian-API-Key", "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI4MzdlMDliMy1kN2NjLTQ1YzYtODE5OC05NDkxODkyMjVlZjMifQ.8ybaCQAlzjfrYDDUxqaLkxHSqgpmSQF-JdPc5HWGw-0");
+        },
+        xhrFields: {
+      withCredentials: true
+        },
+        async: false,
+        crossDomain: true,
+        dataType: 'json',
+        data:JSON.stringify({ 
+            nombre: field1, 
+            nif : field2,
+            email: field3,
+            telefono:field4,
+            razonSocial:field5,
+            cif:field6,
+            apellidos:field7
+        }),
+        contentType: 'application/json; charset=utf-8',
+        success: function (response) {
+            $('#ajax-contact').hide();
+            $("#second").show();
+        },
+        error: function () {
+            alert("Ha ocurrido un error en la llamada");
+        }
+    }); 
+    }); 
+
+
+</script>                
+                </main>
+            </div>
+        </div>  
+
+
+
+
+
+<object id="__symantecPKIClientMessenger" data-supports-flavor-configuration="true" data-extension-version="0.5.0.109" style="display: none;"></object><span id="__symantecPKIClientDetector" style="display: none;">__PRESENT</span></body></html>
